@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias Ipsum</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: rgb(31, 30, 30);
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            width: 90%;
+            background-color: white;
+            margin: auto;
+        }
+        .cabecalho{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(9, 94, 151, 0.705);
+            color: white;
+            padding: 15px;
+        }
+        .logorodape img{
+            filter: brightness(0) invert(1);
+        }
+        .login{
+            align-self: center;
+        }
+        .login a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(4, 52, 124);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .login a:hover{
+            background-color: rgb(2, 29, 70);
+            transition: 0.5s;
+            color: rgba(0, 174, 255, 0.705);
+        }
+        .menu{
+            display: flex;
+            background-color: rgb(0, 62, 155);
+            position: sticky;
+            top: 0;
+            justify-content: space-around;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+        .menu a:hover{
+            background-color: rgb(4, 52, 124);
+            transition: 0.5s;
+            color: rgba(0, 174, 255, 0.705);
+        }
+        .menu a.ativo{
+            background-color: rgb(0, 34, 85);
+            color: white;
+        }
+        .corpo{
+            display: flex;
+            padding: 12px;
+        }
+        .lateral{
+            flex: 30%;
+            padding: 15px;
+        }
+        .lateral img{
+            width: 70%;
+        }
+        .conteudo{
+            flex: 70%;
+            margin-left: 10px;
+        }
+        .rodape1{
+            display: flex;
+            background-color: rgb(4, 52, 124);
+            color: white;
+        }
+        .rodape2{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(2, 32, 78);
+            color: white;
+        }
+        .titulorodape{
+            font-size: 15px;
+            
+        }
+        .listarodape{
+            list-style-type: none;
+            padding: 0;
+        }
+        .listarodape a{
+            text-decoration: none;
+            color: white;
+        }
+        .listarodape a:hover{
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+        .menurodape{
+            margin-left: 20px;
+        }
+        .logorodape{
+            align-self: center;
+            padding: 10px;
+        }
+        /* Ajustes de Responsividade */
+        @media screen and (max-width: 700px) {
+            .cabecalho{
+                flex-direction: column;
+            }
+            .logotipo img{
+                display: block;
+                margin: auto;
+            }
+            .menu{
+                flex-direction: column;
+                position: static;
+            }
+            .corpo{
+                flex-direction: column;
+            }
+            .lateral img{
+                width: 100%;
+            }
+            .lateral1{
+                order: 1;
+            }
+            .conteudo{
+                order: 2;
+            }
+            .rodape1{
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="cabecalho">
+        <div class="logotipo">
+          <img src="img/logo.png" alt="Logotipo" width="90px">
+        </div>
+
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+    </div>
+
+    <div class="menu">
+       <a href="#" class="ativo">Início</a>
+       <a href="#">Notícias</a>
+       <a href="#">Cursos</a>
+       <a href="#">Contato</a>
+    </div>
+
+    <div class="corpo">
+        <div class="lateral">
+            <img src="img/fake.news.png" alt="Fake News" width="250px">
+            <h2>Barra Lateral</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime saepe quaerat mollitia! Necessitatibus tenetur, fugit exercitationem itaque autem, culpa fuga soluta magni voluptatum, ab quibusdam! Vitae enim reiciendis in possimus. Quos unde sunt enim accusantium! Facere illo reprehenderit nam dolorum ab, recusandae veritatis iusto expedita tempore ut eum illum corrupti voluptas deleniti corporis optio velit aspernatur a tempora dolor, deserunt molestiae. Unde mollitia, amet nostrum ducimus omnis sit architecto consequuntur.</p>
+        </div>
+
+        <div class="conteudo">
+          <h2>Tema da Notícia</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam alias nesciunt nam, placeat beatae ducimus tempore dolorem repudiandae enim temporibus repellendus a earum. Provident voluptas, laudantium asperiores ipsa facilis eveniet aspernatur nulla reprehenderit voluptatibus voluptate id perspiciatis ratione. Ipsa asperiores ad temporibus architecto consectetur cum, vero libero error veniam. Ea earum ad similique voluptas enim excepturi labore ex voluptatum architecto itaque impedit, sequi commodi porro eius ipsam totam, est cumque molestiae maiores dolore alias dignissimos nobis atque. Rem adipisci architecto nemo suscipit soluta distinctio, inventore doloribus atque ratione itaque aliquid perspiciatis officiis cumque ea libero optio culpa. Fugit, nesciunt!</p>
+
+          <h2>Tema da Notícia</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta repellendus suscipit vero voluptate, eveniet cumque odit impedit asperiores quam odio pariatur optio nam quae, assumenda eum quidem fuga quasi repellat dolore reiciendis harum aspernatur enim! Velit ipsa placeat ut vitae at, ratione expedita voluptatum esse incidunt non. Officiis incidunt voluptas excepturi quibusdam porro odit ipsa, fuga molestiae dolores quia sed numquam exercitationem esse adipisci animi cupiditate ab eligendi commodi doloremque! Numquam voluptas dolores maiores blanditiis porro dolorum consequuntur reprehenderit laudantium officia corrupti, quod recusandae accusamus distinctio nemo molestiae necessitatibus non nulla officiis. Perspiciatis, expedita ex? Corrupti nihil vitae fuga ipsam repudiandae cum aspernatur. Fugit, sit! Accusantium vero, alias corrupti iure beatae unde. Quo expedita maiores voluptatum repellat odit laborum rem. Ex perferendis dignissimos, quibusdam aut ipsum assumenda recusandae odit dolor et sapiente itaque libero excepturi eos velit, architecto deleniti consequuntur inventore beatae eius optio. Sit, quam. Voluptates cupiditate maiores dolore?</p>
+
+          <h2>Tema da Notícia</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error deleniti nisi velit asperiores placeat dolorum, molestias voluptatum praesentium non excepturi omnis doloribus nulla vel est tempore incidunt, aliquid aliquam dolore architecto! Sint quos officia asperiores quasi esse reprehenderit dicta eaque vel consectetur voluptate? Alias voluptatum beatae voluptas, veritatis, iusto minus laboriosam adipisci temporibus cum doloremque tenetur voluptatibus porro nostrum blanditiis deleniti at tempora facere tempore laborum accusantium consectetur vero! Vitae cum nulla et nemo id sint sit accusantium nam excepturi, facilis ab. Earum rerum, odio laboriosam obcaecati reiciendis quos assumenda quia et, similique, adipisci error fugit optio cumque esse velit.</p>
+        </div>
+    </div>
+
+    <div class="rodape1">
+        <div class="logorodape">
+          <img src="img/logo.png" alt="Logotipo" width="60px">
+        </div>
+
+        <div class="menurodape">
+          <h2 class="titulorodape">Outros items:</h2>
+          <ul class="listarodape">
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="rodape2">
+        <p>&copy; 2023 - Todos os Direitos Reservados</p>
+    </div>
+
+    </div>
+</body>
+</html>

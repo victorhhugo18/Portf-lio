@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenacFlex</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+    *{
+      box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        background-color: rgb(31, 30, 30);
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        width: 55%;
+        background-color: white;
+        margin: auto;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(46,107,173);
+        color: white;
+        padding: 28px;
+    }
+    .menu{
+        display: flex;
+        background-color: rgb(51,51,51);
+        position: sticky;
+        top: 0;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+    }
+    .corpo{
+        display: flex;
+        padding: 1px;
+    }
+    .lateral{
+        flex: 30%;
+        padding: 20px;
+        background-color: rgb(241,241,241);
+    }
+    .conteudo{
+        flex: 70%;
+        margin-left: 20px;
+        padding: 15px;
+    }
+    .conteudo img{
+        width: 100%;
+        height: 40%;
+    }
+    .rodape{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(221,221,221);
+        font-weight: bold;
+        padding: 20px;
+    }
+    /* Responsividade */
+    @media screen and (max-width: 1300px) {
+        .cabecalho{
+            flex-direction: column;
+        }
+        .menu{
+            position: static;
+            justify-content: space-around;
+        }
+        .corpo{
+            flex-direction: column;
+        }
+        .lateral img{
+            width: 100%;
+        }
+        .lateral{
+            order: 2;
+        }
+        .conteudo{
+            order: 1;
+            margin-left: 0px;
+        }
+        .conteudo img{
+            margin-left: 0;
+        }
+        .rodape1{
+            justify-content: space-between;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+  
+    <div class="cabecalho">
+    <h1>Senac São Paulo</h1>
+    <p>Desenvolvimento de layout com <b>flex</b> layout</p>
+    </div>
+
+    <div class="menu">
+    <a href="#" class="ativo">Início</a>
+    <a href="#">Loja</a>
+    <a href="#">Contato</a>
+    <a href="#">Sobre</a>
+    </div>
+
+    <div class="corpo">
+        <div class="lateral">
+        <h1>O Senac</h1>
+        <img src="img/img-lateral.jpg" alt="Logo Senac" width="280px" height="250px">
+        <p>Estamos presentes em várias regiões do Estado de São Paulo. Encontre uma unidade perto de você e venha estudar com a gente.</p>
+        </div>
+
+        <div class="conteudo">
+        <h1>TITULO DA POSTAGEM</h1>
+        <p><b>Victor Hugo, Oct 16, 2023</b></p>
+        <img src="img/img-conteudo.jpg" alt="Estrutura Senac São Paulo">
+        <p>Sed sagittis a purus ut condimentum. Curabitur facilisis, ex a pulvinar condimentum, ligula nibh pharetra enim, et fermentum massa metus in ex. Pellentesque ante ante, malesuada ac quam at, fringilla pretium felis. Phasellus varius dignissim diam, non dapibus dui mattis</p>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>&copy; Senac - 2023</p>
+    </div>
+
+    </div>
+</body>
+</html>
